@@ -1,20 +1,20 @@
-import { PricingTable } from '@clerk/clerk-react'
-import React from 'react'
+import { PricingTable } from '@clerk/clerk-react';
+import React from 'react';
 
 const Plan = () => {
   return (
-    <div className='max-w-2xl mx-auto z-20 my-30'>
-      <div className="text-center">
-            <h2 className='text-slate-700 text-[42px] font-semibold'>Choose Your Plan</h2>
-            <p className='text-gray-500 max-w-lg mx-auto'>Start for free and scale up as you grow.
-                Find the perfect plan for your content creation needs.
-            </p>
+    <div className="max-w-2xl mx-auto my-8 z-20 px-4">
+      <div className="text-center mb-6">
+        <h2 className="text-xl text-gray-800 font-normal">Choose Your Plan</h2>
+        <p className="text-sm text-gray-600 max-w-md mx-auto">
+          Start for free and scale up as you grow. Find the perfect plan for your content creation needs.
+        </p>
       </div>
-        <div className="mt-14 max-sm:mx-8">
-            <PricingTable />
-        </div>
+      <div>
+        <PricingTable />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Plan
+export default Plan;
