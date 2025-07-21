@@ -175,7 +175,7 @@ export const generateImage = async (req, res) => {
     await sql`INSERT INTO creations(user_id, prompt, content, type, publish)
               VALUES (${userId}, ${prompt}, ${secure_url}, 'image', ${publish ?? false})`;
 
-    res.json({ success: true, secure_url });
+    res.json({ success: true, content: secure_url });
   } catch (error) {
     console.error("Image Generation Error:", error?.response?.data || error.message);
     res.status(500).json({
