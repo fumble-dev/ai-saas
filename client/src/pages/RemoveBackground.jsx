@@ -76,7 +76,7 @@ const RemoveBackground = () => {
           {loading && (
             <span className="w-4 h-4 border-2 border-t-transparent border-gray-600 rounded-full animate-spin"></span>
           )}
-          {loading ? "Generating..." : "Remove Background"}
+          {loading ? "Removing..." : "Remove Background"}
         </button>
       </form>
 
