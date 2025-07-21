@@ -214,7 +214,7 @@ export const removeBackground = async (req, res) => {
     await sql`INSERT INTO creations(user_id, prompt, content, type)
               VALUES (${userId}, 'Remove background from image', ${secure_url}, 'image')`;
 
-    res.json({ success: true, secure_url });
+    res.json({ success: true, content: secure_url });
   } catch (error) {
     console.error("Image Background Removal Error:", error?.response?.data || error.message);
     res.status(500).json({
