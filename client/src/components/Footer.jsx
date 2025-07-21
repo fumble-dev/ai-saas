@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="md:max-w-lg">
           <img className="h-8" src={assets.logo} alt="logo" />
           <p className="mt-4 text-sm leading-relaxed">
-            Experience the power of AI with Quick.AI
+            Experience the power of AI with Promptify...
             <br />
             Transform your content creation with our suite of premium AI tools. Write articles, generate images, and enhance your workflow.
           </p>
